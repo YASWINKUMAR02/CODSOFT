@@ -23,6 +23,7 @@ class Main{
             int n=sc.nextInt();
             if(n==obj.rand){
                 System.out.println("Guessed number is Correct");
+                isTrue=true;
             }
             else{
                 obj.check(n);
