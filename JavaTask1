@@ -1,0 +1,32 @@
+import java.util.*;
+class Rand{
+    int rand=(int)(Math.random()*100);
+    void check(int n){
+        if(n==rand){
+            System.out.println("Correct");
+        }
+        else if(n<rand){
+            System.out.println("Too Low");
+        }
+        else{
+            System.out.println("Too High");
+        }
+    }
+}
+class Main{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        Rand obj=new Rand();
+        boolean isTrue=false;
+        while(!isTrue){
+            System.out.println("Enter the Guessed Number(0-99): ");
+            int n=sc.nextInt();
+            if(n==obj.rand){
+                System.out.println("Guessed number is Correct");
+            }
+            else{
+                obj.check(n);
+            }
+        }
+    }
+}
