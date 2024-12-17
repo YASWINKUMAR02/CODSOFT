@@ -1,3 +1,4 @@
+//Number Guess Game
 import java.util.*;
 class Rand{
     int rand=(int)(Math.random()*100);
